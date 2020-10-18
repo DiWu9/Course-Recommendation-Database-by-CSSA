@@ -1,0 +1,55 @@
+body {
+    background-color: #733635;
+}
+
+h1 {
+    padding-top: 5%;
+    color: white;
+    text-align: center;
+}
+
+/*span {*/
+/**/
+/*}*/
+
+label {
+    color: white;
+}
+
+input {
+   margin-bottom: 20px;
+}
+
+.pad {
+    height: 20px;
+}
+
+#form_content {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /*height: 200px;*/
+    /*border: 1px solid black;*/
+    /*line-height: 25px;*/
+    /*top: 25%;*/
+    /*position: relative;*/
+    /*right: 535px;*/
+    /*display: table;*/
+    /*justify-content: space-between;*/
+    /*vertical-align: middle;*/
+    /*transform: translate(50%, -50%);*/
+}
+
+/*#course_prefix_input, #course_number_input, #professor, #suggest_button {*/
+/*    padding: 2px;*/
+/*}*/
+
+/*#course_prefix_input {*/
+/*    border-color: yellow;*/
+/*}*/
+
+/*#course_prefix_alert {*/
+/*    border-style: hidden;*/
+/*}*/

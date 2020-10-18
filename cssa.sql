@@ -1,0 +1,1 @@
+CREATE DATABASE courses; # consider each course to be an object, implement features
