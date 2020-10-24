@@ -2,20 +2,28 @@
 // Chapter 1, 2-3(HTML), 4-5(CSS), 6-8(JS), 14(SQL), 12-13(PHP), 10(Mobile Web Dev), 9(jQuery), 11(Node.js)
 // inquire any chapter when have foundation questions, and stackoverflow always help
 // handle vocabulary input, mapping to prefix
-const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT", "ARB", "AST", "ATH", "AVA",
-"BCH", "BIO", "BME", "CHM", "CHN", "MLT", "CLS", "CSC", "ECE", "ECO", "EGL", "ENS", "ESC", "FLM", "FPR", "FRN",
-"GEO", "GER", "GRK", "GSW", "HBR", "HEB", "HST", "IDM", "IMP", "ISC", "ITL", "JPN", "LAS", "LAT", "MER", "MLL",
-"MTH", "PHL", "PHY", "POR", "PSC", "PSY", "REL", "REE", "RUS", "SCH", "SMT", "SOC", "SRS", "SPN", "STA"];
-const numberMin = 0;
-const numberMax = 499;
-// need Object data structure?
-// consider OOP: class Course (Chapter 8)
+
+// Chapter 6:
+// 6.7: need Object data structure? (Actually have been using it all the time)
+// 6.8: use template literal? (relating PHP?)
+// 6.9: consider add Date object: record each suggest request and pass to the db
+// *consider machine learning: CS229
+
+// Chapter 8:
+// 8.2/8.3: consider OOP: class Course
+
 // Google Form: surveying on suggestions
 // Excel: store and process course suggestions (pre-database)
 // JavaScript: all underlying logic on web pages with format
 // PHP: client - server - database communication
 // MySQL: query to course feedback/suggestion database and return; put the scraped prerequisites to relational DBs
 // web scraping: (periodically) obtain prerequisites of courses
+const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT", "ARB", "AST", "ATH", "AVA",
+"BCH", "BIO", "BME", "CHM", "CHN", "MLT", "CLS", "CSC", "ECE", "ECO", "EGL", "ENS", "ESC", "FLM", "FPR", "FRN",
+"GEO", "GER", "GRK", "GSW", "HBR", "HEB", "HST", "IDM", "IMP", "ISC", "ITL", "JPN", "LAS", "LAT", "MER", "MLL",
+"MTH", "PHL", "PHY", "POR", "PSC", "PSY", "REL", "REE", "RUS", "SCH", "SMT", "SOC", "SRS", "SPN", "STA"];
+const numberMin = 0;
+const numberMax = 499;
 
 function inputTypeCheck(input, charStart, charEnd) {
     let typeCorrect = true;
