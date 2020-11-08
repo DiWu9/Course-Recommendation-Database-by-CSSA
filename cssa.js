@@ -7,7 +7,10 @@
 // 6.7: need Object data structure? (Actually have been using it all the time)
 // 6.8: use template literal? (relating PHP?)
 // 6.9: consider add Date object: record each suggest request and pass to the db
-// *consider machine learning: CS229
+// 6.10: machine learning math: pi, e, log(x), ln(x), etc., especially Math.random() for sampling
+// 6.11: add/replace on some functions of form validation, if necessary; compare CSS modification and Exception handling
+// 7.1: document (DOM), window (.open(), .location, .navigator), console; *async and *defer; handle third-party JS libraries
+// *consider add machine learning when core features are done: CS229
 
 // Chapter 8:
 // 8.2/8.3: consider OOP: class Course
@@ -24,6 +27,9 @@ const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT"
 "MTH", "PHL", "PHY", "POR", "PSC", "PSY", "REL", "REE", "RUS", "SCH", "SMT", "SOC", "SRS", "SPN", "STA"];
 const numberMin = 0;
 const numberMax = 499;
+
+document.writeln("" + Math.random());
+window.confirm("Do you think this is a test");
 
 function inputTypeCheck(input, charStart, charEnd) {
     let typeCorrect = true;
