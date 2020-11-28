@@ -27,9 +27,16 @@ const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT"
 "MTH", "PHL", "PHY", "POR", "PSC", "PSY", "REL", "REE", "RUS", "SCH", "SMT", "SOC", "SRS", "SPN", "STA"];
 const numberMin = 0;
 const numberMax = 499;
+const messageCollection = ["How are classes going this term?", "What is a good one for breakfast/lunch/dinner?",
+    "Did you watch the soccer/basketball (.etc) match?"];
 
 document.writeln("" + Math.random());
 window.confirm("Do you think this is a test");
+
+function displayMessage() {
+    document.getElementById("message").innerText = messageCollection[Math.floor(
+        Math.random() * (messageCollection.length))]
+}
 
 function inputTypeCheck(input, charStart, charEnd) {
     let typeCorrect = true;
