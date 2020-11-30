@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    padding-top: 5%;
+    padding-top: 1%;
     color: white;
     text-align: center;
 }
@@ -28,8 +28,8 @@ input {
     margin: auto;
     text-align: center;
     width: 200px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     /*height: 200px;*/
     /*border: 1px solid black;*/
     /*line-height: 25px;*/
@@ -40,6 +40,25 @@ input {
     /*justify-content: space-between;*/
     /*vertical-align: middle;*/
     /*transform: translate(50%, -50%);*/
+}
+
+#welcome {
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    padding-bottom: 1%;
+}
+
+#message {
+    text-align: center;
+}
+
+#read_this {
+    text-align: center;
+}
+
+#comments {
+    text-align: center;
 }
 
 /*#course_prefix_input, #course_number_input, #professor, #suggest_button {*/
