@@ -28,14 +28,14 @@ const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT"
 const numberMin = 0;
 const numberMax = 499;
 const messageCollection = ["How are classes going this term?", "What is a good one for breakfast/lunch/dinner?",
-    "Did you watch the soccer/basketball (.etc) match?"];
+    "Did you watch the soccer/basketball (.etc) match?", "Where to go (safely) for the winter break?"];
 
-document.writeln("" + Math.random());
-window.confirm("Do you think this is a test");
+// document.writeln("" + Math.random());
+// window.confirm("Do you think this is a test");
 
 function displayMessage() {
-    document.getElementById("message").innerText = messageCollection[Math.floor(
-        Math.random() * (messageCollection.length))]
+    document.getElementById("message").innerHTML = messageCollection[Math.floor(
+        Math.random() * (messageCollection.length))] + "<br>" + "<br>"
 }
 
 function inputTypeCheck(input, charStart, charEnd) {
@@ -72,6 +72,10 @@ function validateCourseNumber() {
     else{
         numberInput.style.borderColor = "blue";
     }
+}
+
+function validateProfessor() {
+
 }
 
 function validateForm() {
