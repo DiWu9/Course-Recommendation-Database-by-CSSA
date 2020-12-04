@@ -6,7 +6,39 @@ h1 {
     padding-top: 1%;
     color: white;
     text-align: center;
+    position: relative;
+    /*font*/
 }
+
+h1:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    top: 65%;
+    left: 250px;
+    position: absolute;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    top: 65%;
+    right: 250px;
+    position: absolute;
+}
+
+/*h1:before {*/
+/*    left: 0;*/
+/*}*/
+
+/*h1:after {*/
+/*    right: 0;*/
+/*}*/
 
 /*span {*/
 /**/
@@ -25,6 +57,7 @@ input {
 }
 
 #form_content {
+    /*font*/
     margin: auto;
     text-align: center;
     width: 200px;
@@ -43,6 +76,7 @@ input {
 }
 
 #welcome {
+    /*font*/
     margin: auto;
     text-align: center;
     width: 600px;
@@ -50,14 +84,17 @@ input {
 }
 
 #message {
+    /*font*/
     text-align: center;
 }
 
 #read_this {
+    /*font*/
     text-align: center;
 }
 
 #comments {
+    /*font*/
     text-align: center;
 }
 
