@@ -3,42 +3,40 @@ body {
 }
 
 h1 {
-    padding-top: 1%;
     color: white;
     text-align: center;
     position: relative;
-    /*font*/
+    font-family: cursive;
 }
 
 h1:before {
+    border-color: white;
     content: "";
     display: block;
-    width: 120px;
+    width: 135px;
     height: 2px;
     background: #000;
-    top: 65%;
+    top: 50%;
     left: 250px;
     position: absolute;
 }
 
 h1:after {
+    color: white;
     content: "";
     display: block;
-    width: 120px;
+    width: 135px;
     height: 2px;
     background: #000;
-    top: 65%;
+    top: 50%;
     right: 250px;
     position: absolute;
 }
 
-/*h1:before {*/
-/*    left: 0;*/
-/*}*/
-
-/*h1:after {*/
-/*    right: 0;*/
-/*}*/
+p {
+    margin: 0;
+    line-height: 12px;
+}
 
 /*span {*/
 /**/
@@ -56,13 +54,39 @@ input {
     height: 20px;
 }
 
+#lang_ver {
+    /*position: relative;*/
+    /*top: 0;*/
+    color: white;
+    right: 0;
+    /*width: 100px;*/
+    /*text-align:right;*/
+}
+
+#welcome {
+    /*font*/
+    margin: auto;
+    text-align: justify;
+    text-align-last: center;
+    width: 800px;
+    padding-bottom: 1%;
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+
+#read_this {
+    font-family: sans-serif;
+    text-align: center;
+}
+
 #form_content {
     /*font*/
     margin: auto;
     text-align: center;
-    width: 200px;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    width: 600px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 1.5;
     /*height: 200px;*/
     /*border: 1px solid black;*/
     /*line-height: 25px;*/
@@ -75,22 +99,14 @@ input {
     /*transform: translate(50%, -50%);*/
 }
 
-#welcome {
-    /*font*/
-    margin: auto;
-    text-align: center;
-    width: 600px;
-    padding-bottom: 1%;
+#form_content p {
+    line-height: 0;
+    padding-bottom: 12px;
 }
 
-#message {
-    /*font*/
+#greeting {
     text-align: center;
-}
-
-#read_this {
-    /*font*/
-    text-align: center;
+    font-family: sans-serif;
 }
 
 #comments {
