@@ -28,15 +28,21 @@ const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT"
 const numberMin = 0;
 const numberMax = 499;
 const messageCollection = ["How are classes going this term?", "What is a good one for breakfast/lunch/dinner?",
-    "Did you watch the soccer/basketball (.etc) match?", "Where to go (safely) for the winter break?"];
+    "Did you watch the soccer/basketball (.etc) match?", "Where to go (safely) for the winter break?",
+    "What is the weather like today?"];
 
 // document.writeln("" + Math.random());
 // window.confirm("Do you think this is a test");
 
 function displayMessage() {
-    document.getElementById("message").innerHTML = messageCollection[Math.floor(
-        Math.random() * (messageCollection.length))] + "<br>" + "<br>"
+    let greeting = document.getElementById("greeting");
+    greeting.innerHTML = messageCollection[Math.floor(Math.random() * (messageCollection.length))] + "<br><br>";
+    greeting.style.fontFamily = "sans-serif";
 }
+
+// show the error message if an input meets a case
+// #1: confirm the location to display error message (done)
+// #2: determine priority (?) of error message
 
 function inputTypeCheck(input, charStart, charEnd) {
     let typeCorrect = true;
@@ -54,12 +60,27 @@ function inputTypeCheck(input, charStart, charEnd) {
 
 function validateCoursePrefix() {
     let prefixInput = document.getElementById("course_prefix_input");
-    if((!(inputTypeCheck(prefixInput, 97, 122) || inputTypeCheck(prefixInput, 65, 90)))
-        || (prefixInput.value.length !== 3) || (!prefixCollection.includes(prefixInput.value.toUpperCase()))) {
+    let invalidChar = !(inputTypeCheck(prefixInput, 97, 122)
+        || inputTypeCheck(prefixInput, 65, 90));
+    let invalidLen = prefixInput.value.length !== 3;
+    let nonExistentPrefix = !prefixCollection.includes(prefixInput.value.toUpperCase());
+    let prefixError = document.getElementById("course_prefix_error");
+    if(invalidChar || invalidLen || nonExistentPrefix) {
         prefixInput.style.borderColor = "red";
+        if(invalidChar) {
+            prefixError.innerHTML = "The characters are not valid";
+        }
+        else if(invalidLen) {
+            prefixError.innerHTML = "The length of input is not three";
+        }
+        else { // nonExistentPrefix
+            prefixError.innerHTML = "The prefix does not exist";
+        }
+        prefixError.style.color = "red";
     }
     else{
         prefixInput.style.borderColor = "blue";
+        prefixError.innerHTML = "";
     }
 }
 
