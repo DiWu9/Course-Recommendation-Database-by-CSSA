@@ -1,6 +1,6 @@
 https://webapps.union.edu/directory
-http://www.asciitable.com/
 https://en.wikipedia.org/wiki/HTTP_404
+http://www.asciitable.com/
 https://html.com/attributes/link-type/
 https://www.w3.org/Style/Examples/007/center.html
 https://www.w3.org/Style/Examples/007/units.en.html
@@ -52,6 +52,7 @@ https://developer.mozilla.org/en-US/docs/Glossary/Truthy
 https://developer.mozilla.org/en-US/docs/Glossary/Middleware
 https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion
 https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
