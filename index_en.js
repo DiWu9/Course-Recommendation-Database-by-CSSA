@@ -10,6 +10,7 @@
 // 6.10: machine learning math: pi, e, log(x), ln(x), etc., especially Math.random() for sampling
 // 6.11: add/replace on some functions of form validation, if necessary; compare CSS modification and Exception handling
 // 7.1: document (DOM), window (.open(), .location, .navigator), console; *async and *defer; handle third-party JS libraries
+// 7.2: DOM structure
 // *consider add machine learning when core features are done: CS229
 
 // Chapter 8:
@@ -68,13 +69,13 @@ function validateCoursePrefix() {
     if(invalidChar || invalidLen || nonExistentPrefix) {
         prefixInput.style.borderColor = "red";
         if(invalidChar) {
-            prefixError.innerHTML = "The characters are not valid";
+            prefixError.innerHTML = "There is at least one character being not alphabetical";
         }
         else if(invalidLen) {
             prefixError.innerHTML = "The length of input is not three";
         }
         else { // nonExistentPrefix
-            prefixError.innerHTML = "The prefix does not exist";
+            prefixError.innerHTML = "The prefix does not exist. Please refer to the Union course catalog.";
         }
         prefixError.style.color = "red";
     }
@@ -86,12 +87,27 @@ function validateCoursePrefix() {
 
 function validateCourseNumber() {
     let numberInput = document.getElementById("course_number_input");
-    if((!inputTypeCheck(numberInput, 48, 57)) || (numberInput.value.length !== 3)
-        || (parseInt(numberInput.value) > numberMax)){
+    let invalidChar = !inputTypeCheck(numberInput, 48, 57);
+    let invalidLen = numberInput.value.length !== 3;
+    let nonExistentNumber = parseInt(numberInput.value) > numberMax;
+    let numberError = document.getElementById("course_number_error");
+    if(invalidChar || invalidLen || nonExistentNumber){
         numberInput.style.borderColor = "red";
+        if(invalidChar) {
+            numberError.innerHTML = "There is at least one character being not numeric";
+        }
+        else if(invalidLen) {
+            numberError.innerHTML = "The length of input is not three";
+        }
+        else { // nonExistentNumber
+            numberError.innerHTML = `The number does not exist. The minimum is ${numberMin}
+             and the maximum is ${numberMax}.`;
+        }
+        numberError.style.color = "red";
     }
     else{
         numberInput.style.borderColor = "blue";
+        numberError.innerHTML = "";
     }
 }
 
