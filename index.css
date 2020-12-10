@@ -63,8 +63,15 @@ input {
     /*text-align:right;*/
 }
 
+#greeting {
+    /*color: white;*/
+    text-align: center;
+    font-family: sans-serif;
+}
+
 #welcome {
     /*font*/
+    /*color: white;*/
     margin: auto;
     text-align: justify;
     text-align-last: center;
@@ -75,6 +82,7 @@ input {
 }
 
 #read_this {
+    /*color: white;*/
     font-family: sans-serif;
     text-align: center;
 }
@@ -102,11 +110,6 @@ input {
 #form_content p {
     line-height: 0;
     padding-bottom: 12px;
-}
-
-#greeting {
-    text-align: center;
-    font-family: sans-serif;
 }
 
 #comments {
