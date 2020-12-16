@@ -26,8 +26,9 @@ const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT"
 "BCH", "BIO", "BME", "CHM", "CHN", "MLT", "CLS", "CSC", "ECE", "ECO", "EGL", "ENS", "ESC", "FLM", "FPR", "FRN",
 "GEO", "GER", "GRK", "GSW", "HBR", "HEB", "HST", "IDM", "IMP", "ISC", "ITL", "JPN", "LAS", "LAT", "MER", "MLL",
 "MTH", "PHL", "PHY", "POR", "PSC", "PSY", "REL", "REE", "RUS", "SCH", "SMT", "SOC", "SRS", "SPN", "STA"];
-const numberMin = 0;
+const numberMin = 0; // consider deletion
 const numberMax = 499;
+const courseListing = "https://catalog.union.edu/content.php?catoid=21&navoid=883";
 const messageCollection = ["How are classes going this term?", "What is a good one for breakfast/lunch/dinner?",
     "Did you watch the soccer/basketball (.etc) match?", "Where to go (safely) for the winter break?",
     "What is the weather like today?"];
@@ -75,7 +76,8 @@ function validateCoursePrefix() {
             prefixError.innerHTML = "The length of input is not three";
         }
         else { // nonExistentPrefix
-            prefixError.innerHTML = "The prefix does not exist. Please refer to the Union course catalog.";
+            prefixError.innerHTML = `The prefix does not exist. Please refer to the 
+                                     <a href="${courseListing}">Union course catalog</a>.`;
         }
         prefixError.style.color = "red";
     }
@@ -100,8 +102,7 @@ function validateCourseNumber() {
             numberError.innerHTML = "The length of input is not three";
         }
         else { // nonExistentNumber
-            numberError.innerHTML = `The number does not exist. The minimum is ${numberMin}
-             and the maximum is ${numberMax}.`;
+            numberError.innerHTML = `The number does not exist. The maximum value is ${numberMax}`;
         }
         numberError.style.color = "red";
     }
@@ -120,6 +121,7 @@ function validateForm() {
     // Chapter 6 & 7
     let catalogForm = document.getElementsByTagName("form")[0];
     catalogForm.action.innerText = "https://www.google.com"; // example
+    // change to query_results_en.html
     // concatenate corresponding course prefix and number to direct to the catalog
     let coursePrefix = document.getElementById("course_prefix");
     let courseNumber = document.getElementById("course_number");
