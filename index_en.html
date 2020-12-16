@@ -5,12 +5,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Union College CSSA Course Catalog</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Union College CSSA Course Catalog (English Ver.)</title>
+    <link rel="stylesheet" type="text/css" href="index_en.css">
 </head>
 <script src="index_en.js"></script>
 <body>
-    <p id="lang_ver">English | <a href="index_zh.html">中文 (set up web page)</a></p>
+    <p id="lang_ver">English | <a href="index_zh.html">中文</a></p>
     <h1>Union College CSSA Course Catalog</h1>
     <p id="greeting" onclick="displayMessage()">Greetings!<br><br></p>
     <div id="welcome">
@@ -19,9 +19,9 @@
         able to input three values to request relevant data: course prefix, course number, and professor.
     </div>
     <div id="read_this">
-        Please read <a href="README_en.html">this</a> before giving any input:
+        Please read <a href="tips_en.html">this</a> before giving any input:
     </div>
-    <form id="course_catalog" action="/index_en.php" method="post" enctype="application/x-www-form-urlencoded">
+    <form id="course_catalog" action="/index_suggest.php" method="post" enctype="application/x-www-form-urlencoded">
         <div id="form_content">
             <!-- input categories: prefix-number or professor -->
             <!-- may need to handle multiple input -->
@@ -32,7 +32,7 @@
                 <p id="course_prefix_error"></p>
             </div>
             <div id="course_number">
-                <label for="course_number_input">Course Number (e.g. 000)</label><br>
+                <label for="course_number_input">Course Number (e.g. 001)</label><br>
                 <input type="text" name="course_number_input" id="course_number_input" oninput="validateCourseNumber()"><br>
                 <p id="course_number_error"></p>
             </div>
