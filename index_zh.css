@@ -1,0 +1,130 @@
+body {
+    background-color: #733635;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    font-family: cursive;
+}
+
+h1:before {
+    border-color: white;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    top: 50%;
+    left: 250px;
+    position: absolute;
+}
+
+h1:after {
+    color: white;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    top: 50%;
+    right: 250px;
+    position: absolute;
+}
+
+p {
+    margin: 0;
+    line-height: 12px;
+}
+
+/*span {*/
+/**/
+/*}*/
+
+label {
+    color: white;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.pad {
+    height: 20px;
+}
+
+#lang_ver {
+    /*position: relative;*/
+    /*top: 0;*/
+    color: white;
+    right: 0;
+    /*width: 100px;*/
+    /*text-align:right;*/
+}
+
+#lyrics {
+    /*color: white;*/
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#welcome {
+    /*font*/
+    /*color: white;*/
+    margin: auto;
+    text-align: justify;
+    text-align-last: center;
+    width: 800px;
+    padding-bottom: 1%;
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+
+#read_this {
+    /*color: white;*/
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#form_content {
+    /*font*/
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 1.5;
+    /*height: 200px;*/
+    /*border: 1px solid black;*/
+    /*line-height: 25px;*/
+    /*top: 25%;*/
+    /*position: relative;*/
+    /*right: 535px;*/
+    /*display: table;*/
+    /*justify-content: space-between;*/
+    /*vertical-align: middle;*/
+    /*transform: translate(50%, -50%);*/
+}
+
+#form_content p {
+    line-height: 0;
+    padding-bottom: 12px;
+}
+
+#comments {
+    /*font*/
+    text-align: center;
+}
+
+/*#course_prefix_input, #course_number_input, #professor, #suggest_button {*/
+/*    padding: 2px;*/
+/*}*/
+
+/*#course_prefix_input {*/
+/*    border-color: yellow;*/
+/*}*/
+
+/*#course_prefix_alert {*/
+/*    border-style: hidden;*/
+/*}*/
