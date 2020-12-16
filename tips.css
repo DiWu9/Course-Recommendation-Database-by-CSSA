@@ -1,0 +1,16 @@
+body {
+    background-color: #733635;
+}
+
+h1 {
+    /*color: white;*/
+    /*font-family: serif;*/
+}
+
+#tip_one, #tip_three, #tip_five {
+    color: white;
+}
+
+#tip_two, #tip_four, #tip_six {
+    color: black;
+}
