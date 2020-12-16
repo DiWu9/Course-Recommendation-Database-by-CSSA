@@ -2,7 +2,7 @@ const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT"
     "BIO", "BME", "CHM", "CHN", "MLT", "CLS", "CSC", "ECE", "ECO", "EGL", "ENS", "ESC", "FLM", "FPR", "FRN", "GEO",
     "GER", "GRK", "GSW", "HBR", "HEB", "HST", "IDM", "IMP", "ISC", "ITL", "JPN", "LAS", "LAT", "MER", "MLL",
     "MTH", "PHL", "PHY", "POR", "PSC", "PSY", "REL", "REE", "RUS", "SCH", "SMT", "SOC", "SRS", "SPN", "STA"];
-const numberMin = 0; // consider deletion
+const numberMin = 1;
 const numberMax = 499;
 const courseListing = "https://catalog.union.edu/content.php?catoid=21&navoid=883";
 const messageCollection = ["在有生的瞬间能遇到你 竟花光所有运气", "向天空大声地呼唤说声我爱你 向那流浪的白云说声我想你",
@@ -60,7 +60,8 @@ function validateCourseNumber() {
     let numberInput = document.getElementById("course_number_input");
     let invalidChar = !inputTypeCheck(numberInput, 48, 57);
     let invalidLen = numberInput.value.length !== 3;
-    let nonExistentNumber = parseInt(numberInput.value) > numberMax;
+    let numberInputParsed = parseInt(numberInput.value);
+    let nonExistentNumber = numberInputParsed < numberMin || numberInputParsed > numberMax;
     let numberError = document.getElementById("course_number_error");
     if(invalidChar || invalidLen || nonExistentNumber){
         numberInput.style.borderColor = "red";
@@ -71,7 +72,7 @@ function validateCourseNumber() {
             numberError.innerHTML = "编号长需为3";
         }
         else { // nonExistentNumber
-            numberError.innerHTML = `请输入合理的编号, 此数值最大为${numberMax}`;
+            numberError.innerHTML = `请输入合理的编号, 此数值最小为${numberMin}, 且最大为${numberMax}`;
         }
         numberError.style.color = "red";
     }
