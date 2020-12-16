@@ -1,4 +1,13 @@
+https://catalog.union.edu/content.php?catoid=21&navoid=883
 https://webapps.union.edu/directory
+https://wordpress.com/zh-cn/
+https://www.termsfeed.com/blog/sample-terms-and-conditions-template/
+https://www.sohu.com/a/375005503_665571
+https://m.k.sohu.com/d/466082992?channelId=4&page=9
+https://open.spotify.com/playlist/5aOlxZxJjNQi1obV1PYvnX
+https://blog.weglot.com/9-tips-for-designing-a-multi-language-website/
+https://www.jetbrains.com/help/idea/analyzing-duplicates.html
+https://www.jetbrains.com/help/phpstorm/general-duplicated-code-fragment.html
 https://en.wikipedia.org/wiki/HTTP_404
 http://www.asciitable.com/
 https://html.com/attributes/link-type/
@@ -27,6 +36,7 @@ https://www.w3schools.com/css/css_margin.asp
 https://www.w3schools.com/css/css_padding.asp
 https://www.w3schools.com/css/css_font_size.asp
 https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/cssref/sel_class.asp
 https://www.w3schools.com/cssref/pr_margin.asp
 https://www.w3schools.com/cssref/pr_pos_right.asp
 https://www.w3schools.com/cssref/pr_border-color.asp
@@ -110,5 +120,7 @@ https://stackoverflow.com/questions/17190083/how-to-take-mysql-database-backup-u
 https://stackoverflow.com/questions/1277460/what-is-the-difference-between-group-by-and-order-by-in-sql
 https://stackoverflow.com/questions/4930733/how-to-generate-the-whole-database-script-in-mysql-workbench
 https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page
+https://stackoverflow.com/questions/31419293/edit-a-script-tag-in-the-head-before-it-loads-and-runs-the-script
 https://stackoverflow.com/questions/36013118/how-to-add-space-between-elements-so-they-fill-their-container-div
+https://stackoverflow.com/questions/58760507/how-to-refactoring-this-duplicated-code-fragment-of-switch-statement
 https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css
