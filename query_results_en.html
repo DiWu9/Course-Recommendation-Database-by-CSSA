@@ -6,10 +6,25 @@
 </head>
 <link rel="stylesheet" type="text/css" href="query_results.css">
 <body>
-    <!-- need to learn and to set up .php and .sql files first -->
-    The course that you are querying about is: ______<br>
-    The professor of the course is: ______<br>
-    The suggestions are below:<br>
-    (A List of Suggestions)
+<!-- need to learn and to set up .php and .sql files first -->
+    <h2>QUERY RESULTS</h2>
+    <hr>
+    <div id="query_results">
+        <p id="query_course">The course that you are querying about is: <span class="undone">______</span><br></p>
+        <p id="query_professor">The professor of the course is: <span class="undone">______</span><br></p>
+        <p id="query_suggestions">The suggestions are below:<br><br><br><br><br><br><br><br>
+            (A List of Suggestions)</p>
+        <!-- fix query_suggestions after learning PHP and MySQL -->
+    </div>
+    <div id="comments">
+        <label for="comments_input">Comments</label><br>
+        <textarea name="comments" id="comments_input"></textarea><br>
+        <button id="comments_submit_button" type="submit" value="Submit">Submit</button>
+        <!-- add onclick="validateComments()" -->
+        <!-- add onclick(?)="showSubmitted()" -->
+    </div>
+    <p id="warning">* The blackened ones are undone yet</p>
+    <!-- Handle invalid query based on valid input -->
+    <!-- <h3>I am sorry but the *value* that you inquire does not exist.</h3> -->
 </body>
 </html>
