@@ -1,3 +1,35 @@
 body {
     background-color: #733635;
 }
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+hr {
+    width: 20%;
+}
+
+.undone {
+    color: black;
+}
+
+#query_results, #comments {
+    text-align: center;
+    color: white;
+}
+
+#query_results {
+    line-height: 20px;
+}
+
+#comments {
+    padding-top: 10%;
+    line-height: 50px;
+    /* need to adjust the imbalance of spacing between the three lines */
+}
+
+#query_suggestions {
+    color: black;
+}
