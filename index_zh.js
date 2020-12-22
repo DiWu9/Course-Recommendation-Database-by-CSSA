@@ -4,6 +4,7 @@ const prefixCollection = ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT"
     "MTH", "PHL", "PHY", "POR", "PSC", "PSY", "REL", "REE", "RUS", "SCH", "SMT", "SOC", "SRS", "SPN", "STA"];
 const numberMin = 1;
 const numberMax = 499;
+const numberMaxLength = numberMax.toString().length;
 const courseListing = "https://catalog.union.edu/content.php?catoid=21&navoid=883";
 const messageCollection = ["在有生的瞬间能遇到你 竟花光所有运气", "向天空大声地呼唤说声我爱你 向那流浪的白云说声我想你",
     "原谅我这一生不羁放纵爱自由", "轻轻敲醒沉睡的心灵 慢慢张开你的眼睛", "来日纵使千千阙歌 飘于远方我路上",
@@ -28,6 +29,15 @@ function inputTypeCheck(input, charStart, charEnd) {
         }
     }
     return typeCorrect;
+}
+
+function loadPrefixCollection() {
+    let prefixDataList = document.getElementById("prefix_collection");
+    let prefix = '';
+    for(let index = 0; index < prefixCollection.length; index++) {
+        prefix += '<option value="' + prefixCollection[index] + '"/>';
+    }
+    prefixDataList.innerHTML = prefix;
 }
 
 function validateCoursePrefix() {
@@ -56,6 +66,22 @@ function validateCoursePrefix() {
     }
 }
 
+function loadNumberCollection() {
+    let numberDataList = document.getElementById("number_collection");
+    let number = '';
+    for(let number = numberMin; number < numberMax; number++) {
+        let numberString = number.toString();
+        let leadingZeroCount = numberMaxLength - numberString.length;
+        let processedNumber = '';
+        for(let count = 0; count < leadingZeroCount; count++) {
+            processedNumber += '0';
+        }
+        processedNumber += numberString;
+        number += '<option value="' + processedNumber + '"/>';
+    }
+    numberDataList.innerHTML = number;
+}
+
 function validateCourseNumber() {
     let numberInput = document.getElementById("course_number_input");
     let invalidChar = !inputTypeCheck(numberInput, 48, 57);
@@ -82,8 +108,16 @@ function validateCourseNumber() {
     }
 }
 
+// function loadProfessors
+
 function validateProfessor() {
 
+}
+
+function loadAll() {
+    loadPrefixCollection();
+    loadNumberCollection();
+    // loadProfessors();
 }
 
 function validateForm() {
