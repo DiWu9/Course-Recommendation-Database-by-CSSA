@@ -2,38 +2,42 @@
 <!-- then it is to set up the server and adjust php config, building up a static web page, to resolve 404 -->
 <!-- extend scale to website by looping through step 1 and 2 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- to fix -->
 <head>
     <meta charset="UTF-8">
     <title>Union College CSSA Course Catalog (Chinese Ver.)</title>
-    <link rel="stylesheet" type="text/css" href="index_zh.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<script src="index_zh.js"></script>
-<body>
-    <p id="lang_ver"><a Href="index_en.html">English</a> | 中文</p>
+<script type="text/javascript" src="index.js"></script>
+<body onload="loadAll()">
     <h1>联合学院CSSA课(ren)程(sheng)建(jing)议(yan)</h1>
     <p id="lyrics" onclick="displayMessage()">听歌...<br><br></p>
     <div id="welcome">
         欢迎来到由联合学院(Union College)CSSA技术部设计的课程建议索引页～<br>
         所有建议由Union的学长学姐们提供。可用数据范围限于所上过的课程<br>
-        在填写下方的表格之前,请阅读本处的<a href="tips_zh.html">提示(待开发)</a>。如有疑问欢迎咨询我部成员～
+        在填写下方的表格之前,请阅读本处的<a href="tips.html">提示(待开发)</a>。如有疑问欢迎咨询我部成员～
     </div>
     <div id="please_input">
         请在下方输入您要查询建议的课程前缀、编号及教授名字:
     </div>
     <form id="course_catalog" action="/index_suggest.php" method="post" enctype="application/x-www-form-urlencoded">
+        <!-- revise action -->
         <div id="form_content">
             <!-- input categories: prefix-number or professor -->
             <!-- may need to handle multiple input -->
             <!-- input of professor: may need to handle input either in first name or last name -->
             <div id="course_prefix">
                 <label for="course_prefix_input">课程前缀 (例如AAH)</label><br>
-                <input type="text" name="course_prefix_input" id="course_prefix_input" oninput="validateCoursePrefix()"><br>
+                <input list="prefix_collection" id="course_prefix_input" name="course_prefix_input"
+                       oninput="validateCoursePrefix()"/><br>
+                <datalist id="prefix_collection"></datalist>
                 <p id="course_prefix_error"></p>
             </div>
             <div id="course_number">
                 <label for="course_number_input">课程数字 (例如001)</label><br>
-                <input type="text" name="course_number_input" id="course_number_input" oninput="validateCourseNumber()"><br>
+                <input type="text" list="number_collection" name="course_number_input" id="course_number_input"
+                       oninput="validateCourseNumber()"><br>
+                <datalist id="number_collection"></datalist>
                 <p id="course_number_error"></p>
             </div>
             <div id="professor">
