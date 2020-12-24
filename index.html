@@ -5,7 +5,7 @@
 <html lang="en"> <!-- to fix -->
 <head>
     <meta charset="UTF-8">
-    <title>Union College CSSA Course Catalog (Chinese Ver.)</title>
+    <title>Union College CSSA Course Catalog</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <script type="text/javascript" src="index.js"></script>
@@ -15,30 +15,30 @@
     <div id="welcome">
         欢迎来到由联合学院(Union College)CSSA技术部设计的课程建议索引页～<br>
         所有建议由Union的学长学姐们提供。可用数据范围限于所上过的课程<br>
-        在填写下方的表格之前,请阅读本处的<a href="tips.html">提示(待开发)</a>。如有疑问欢迎咨询我部成员～
+        在填写下方的表格之前,请阅读本处的<a href="tips.html">提示</a>。如有疑问欢迎咨询我部成员～
     </div>
     <div id="please_input">
         请在下方输入您要查询建议的课程前缀、编号及教授名字:
     </div>
     <form id="course_catalog" action="/index_suggest.php" method="post" enctype="application/x-www-form-urlencoded">
-        <!-- revise action -->
+        <!-- revise action: need PHP if we do not use mailto (not yet) -->
         <div id="form_content">
             <!-- input categories: prefix-number or professor -->
             <!-- may need to handle multiple input -->
             <!-- input of professor: may need to handle input either in first name or last name -->
             <div id="course_prefix">
                 <label for="course_prefix_input">课程前缀 (例如AAH)</label><br>
-                <input list="prefix_collection" id="course_prefix_input" name="course_prefix_input"
+                <input type="text" list="prefix_collection" id="course_prefix_input" name="course_prefix_input"
                        oninput="validateCoursePrefix()"/><br>
                 <datalist id="prefix_collection"></datalist>
-                <p id="course_prefix_error"></p>
+                <p id="prefix_error"></p>
             </div>
             <div id="course_number">
                 <label for="course_number_input">课程数字 (例如001)</label><br>
                 <input type="text" list="number_collection" name="course_number_input" id="course_number_input"
                        oninput="validateCourseNumber()"><br>
                 <datalist id="number_collection"></datalist>
-                <p id="course_number_error"></p>
+                <p id="number_error"></p>
             </div>
             <div id="professor">
                 <label for="professor_input">教授姓名 (例如Union)</label><br>
@@ -47,6 +47,7 @@
             </div>
             <!-- add oninput="validateProfessor()" -->
             <button id="suggest_button" type="submit" value="Suggest" onclick="validateForm();">学习一个</button><br><br>
+            <!-- see if we need the validateForm() -->
         </div>
     </form>
     <div id="comments">
