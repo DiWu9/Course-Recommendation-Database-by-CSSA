@@ -5,15 +5,26 @@
     <title>Add Your Suggestion</title>
 </head>
 <link rel="stylesheet" href="add_suggestion.css">
-<body>
-    <form id="add_suggestion" enctype="application/x-www-form-urlencoded" method="post">
-        <label for="course_prefix_input">Course Prefix:</label><br>
-        <input type="text" id="course_prefix_input" name="course_prefix_input"><br>
-        <label for="course_number_input">Course Number:</label><br>
-        <input type="number" id="course_number_input" name="course_number_input"><br>
-        <label for="professor_input">Professor:</label><br>
+<body onload="loadAll()">
+    <h1>添加课程建议</h1>
+    <p id="instructions">
+        如果你觉得有必要告诉学弟学妹一点, 欢迎填写下方的表格 (可阅读本处<a href="tips.html">提示</a>)
+    </p>
+    <form id="add_suggestion" action="mailto:zhongq@union.edu" enctype="application/x-www-form-urlencoded"
+          method="post">
+        <!-- need PHP if we do not use mailto -->
+        <label for="course_prefix_input">课程前缀</label><br>
+        <input type="text" list="prefix_collection" id="course_prefix_input" name="course_prefix_input"><br>
+        <datalist id="prefix_collection"></datalist>
+        <p id="prefix_error"></p>
+        <label for="course_number_input">课程数字</label><br>
+        <input type="text" list="number_collection" id="course_number_input" name="course_number_input"><br>
+        <datalist id="number_collection"></datalist>
+        <p id="number_error"></p>
+        <label for="professor_input">教授姓名</label><br>
         <input type="text" id="professor_input" name="professor_input"><br>
-        <button type="submit" value="Submit"></button>
+        <p id="professor_error"></p>
+        <button type="submit" value="Submit">Excited!©️</button>
     </form>
 </body>
 </html>
