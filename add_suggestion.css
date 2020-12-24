@@ -1,3 +1,17 @@
 body {
     background-color: #733635;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+#instructions {
+    text-align: center;
+}
+
+#add_suggestion {
+    text-align: center;
+    line-height: 1.8;
 }
