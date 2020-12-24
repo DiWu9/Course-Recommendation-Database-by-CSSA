@@ -32,6 +32,7 @@ https://www.w3schools.com/tags/ref_standardattributes.asp
 https://www.w3schools.com/tags/canvas_addcolorstop.asp
 https://www.w3schools.com/tags/canvas_createlineargradient.asp
 https://www.w3schools.com/tags/att_button_type.asp
+https://www.w3schools.com/tags/att_form_action.asp
 https://www.w3schools.com/tags/att_input_type_submit.asp
 https://www.w3schools.com/css/css_text.asp
 https://www.w3schools.com/css/css_font.asp
@@ -54,6 +55,7 @@ https://www.w3schools.com/cssref/pr_background-color.asp
 https://www.w3schools.com/cssref/pr_font_font-family.asp
 https://www.w3schools.com/cssref/css3_pr_text-align-last.asp
 https://www.w3schools.com/js/js_whereto.asp
+https://www.w3schools.com/jsref/event_onload.asp
 https://www.w3schools.com/jsref/event_oninput.asp
 https://www.w3schools.com/jsref/event_onchange.asp
 https://www.w3schools.com/jsref/met_select_add.asp
@@ -86,6 +88,7 @@ https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Upload_files_to_
 *https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview
 https://www.plus2net.com/javascript_tutorial/datalist.php
 https://www.javascripttutorial.net/javascript-dom/javascript-onload/
+https://www.tutorialspoint.com/How-and-why-to-avoid-global-variables-in-JavaScript
 https://www.webnots.com/basics-of-a-static-website/
 https://www.geeksforgeeks.org/python-dictionary-update-method/
 https://www.geeksforgeeks.org/difference-between-innertext-and-innerhtml/
@@ -113,6 +116,7 @@ https://stackoverflow.com/questions/3641581/link-rel-script-usage
 https://stackoverflow.com/questions/18392584/remove-spacing-between-p
 https://stackoverflow.com/questions/1066453/mysql-group-by-and-order-by
 https://stackoverflow.com/questions/16124032/js-strings-vs-concat-method
+https://stackoverflow.com/questions/36667200/mailto-form-action-alternative
 https://stackoverflow.com/questions/114543/how-to-horizontally-center-a-div
 https://stackoverflow.com/questions/4980525/css-center-display-inline-block
 https://stackoverflow.com/questions/43427205/what-is-text-align-justify-all
@@ -138,6 +142,8 @@ https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-hori
 https://stackoverflow.com/questions/31419293/edit-a-script-tag-in-the-head-before-it-loads-and-runs-the-script
 https://stackoverflow.com/questions/36013118/how-to-add-space-between-elements-so-they-fill-their-container-div
 https://stackoverflow.com/questions/58760507/how-to-refactoring-this-duplicated-code-fragment-of-switch-statement
+https://stackoverflow.com/questions/2613310/ive-heard-global-variables-are-bad-what-alternative-solution-should-i-use
 https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css
+https://stackoverflow.com/questions/26650721/how-to-use-javascript-constant-in-javascript-file-from-another-javascript-file
 https://www.computerscience.org/careers/web-developer/
 https://www.computerscience.org/resources/computer-programming-languages/
