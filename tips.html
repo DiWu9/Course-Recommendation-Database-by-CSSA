@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Tips of Query</title>
+    <link rel="stylesheet" type="text/css" href="tips.css">
 </head>
-<link rel="stylesheet" type="text/css" href="tips.css">
+<script type="text/javascript" src="tips.js"></script>
 <body>
-    <h1>Some Tips (You probably have known these, but let's take a look whatever...)</h1>
+    <h1>友(kan)情(yi)提(xia)示(ba)</h1>
     <div class="input_tips">
         <p id="tip_one">
-            1. The alphabetical input is case-insensitive. So, it means the same thing if you put aah or AAH in course prefix,
-            and it is also the same case when you input professor.<br>
+            1. 输入字母时大小写皆🉑️, 比如输入aah和AAH都是一回事；该规则适用于 课程前缀 及 教授姓名。<br>
         </p>
         <p id="tip_two">
-            2. When you input the course number, please follow the three-digit format: for example, if you would like query for
-            CSC 103, then please put 103 in the course number text box.<br>
+            2. 当输入课程数字时, 请输入三位数：比如你要找CSC103这门课的建议, 那么在 课程编号 输入框中写103即🉑️。<br>
         </p>
         <p id="tip_three">
-            3. Please only input the first name or the last name of the professor.<br>
+            3. 教授姓名 顾名思义..只输入姓或者名就可以。<br>
         </p>
         <p id="tip_four">
-            4. If you are not sure about the course prefix or course number to input, please refer to Union's
-            <a href="https://catalog.union.edu/content.php?catoid=21&navoid=883">course listing</a> to search via the
-            Keyword or Phrase feature; if you have any question about the spelling of professor's name, you can try to
-            search on the <a href="https://webapps.union.edu/directory">directory</a> by using the Search or Department
-            feature.
+            <!-- fix the bug of null when do document.write(...) -->
+            4. 所有输入框都带有关键字搜索的功能。如果你想查询课程前缀或者编号, 可以参考Union的
+            <a id="course_listing" href="https://catalog.union.edu/content.php?catoid=21&navoid=883">课程列表</a>
+            (推荐使用Course Filter里的Keyword or Phrase搜索); 如果你想确认教授姓名, 可以通过学校的
+            <a id="directory" href="https://webapps.union.edu/directory">教职工列表(Faculty & Staff Directory)</a>来核实。
         </p>
         <p id="tip_five">
             5. After you have confirmed the course that you want to inquire, please hit Suggest. It might take a while
