@@ -1,5 +1,6 @@
 body {
     background-color: #733635;
+    color: white;
 }
 
 h1 {
@@ -7,10 +8,14 @@ h1 {
     /*font-family: serif;*/
 }
 
+#tip_four {
+    /*display: inline;*/
+}
+
 #tip_one, #tip_three, #tip_five {
-    color: white;
+    /*color: white;*/
 }
 
 #tip_two, #tip_four, #tip_six {
-    color: black;
+    /*color: black;*/
 }
