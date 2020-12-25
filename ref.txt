@@ -11,6 +11,7 @@ https://www.jetbrains.com/help/phpstorm/general-duplicated-code-fragment.html
 https://en.wikipedia.org/wiki/HTTP_404
 http://www.asciitable.com/
 https://html.com/attributes/link-type/
+https://www.oreilly.com/library/view/mac-os-x/0596004605/ch01s06.html
 https://www.w3.org/Style/Examples/007/center.html
 https://www.w3.org/Style/Examples/007/units.en.html
 https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html
@@ -53,6 +54,7 @@ https://www.w3schools.com/cssref/pr_text_text-align.asp
 https://www.w3schools.com/cssref/pr_text_text-indent.asp
 https://www.w3schools.com/cssref/pr_background-color.asp
 https://www.w3schools.com/cssref/pr_font_font-family.asp
+https://www.w3schools.com/cssref/css3_pr_text-overflow.asp
 https://www.w3schools.com/cssref/css3_pr_text-align-last.asp
 https://www.w3schools.com/js/js_whereto.asp
 https://www.w3schools.com/jsref/event_onload.asp
@@ -71,6 +73,7 @@ https://developer.mozilla.org/en-US/docs/Glossary/Truthy
 https://developer.mozilla.org/en-US/docs/Glossary/Middleware
 https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion
 https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
@@ -134,9 +137,11 @@ https://stackoverflow.com/questions/18470682/html-form-make-inputs-appear-on-the
 https://stackoverflow.com/questions/13739568/how-do-i-link-a-javascript-file-to-a-html-file
 https://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
 https://stackoverflow.com/questions/47054766/how-do-i-align-button-to-the-middle-of-the-screen
+https://stackoverflow.com/questions/28215896/intercepting-innerhtml-and-execution-other-command
 https://stackoverflow.com/questions/3587897/best-way-to-change-font-colour-halfway-through-paragraph
 https://stackoverflow.com/questions/17190083/how-to-take-mysql-database-backup-using-mysql-workbench
 https://stackoverflow.com/questions/1277460/what-is-the-difference-between-group-by-and-order-by-in-sql
+https://stackoverflow.com/questions/2837921/is-it-bad-practice-to-embed-javascript-into-the-body-of-html
 https://stackoverflow.com/questions/4930733/how-to-generate-the-whole-database-script-in-mysql-workbench
 https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page
 https://stackoverflow.com/questions/31419293/edit-a-script-tag-in-the-head-before-it-loads-and-runs-the-script
