@@ -15,7 +15,11 @@ hr {
     color: black;
 }
 
-#query_results, #comments {
+.to_modify {
+    color: blue;
+}
+
+#query_results, #user_experience {
     text-align: center;
     color: white;
 }
@@ -24,12 +28,20 @@ hr {
     line-height: 20px;
 }
 
-#comments {
-    padding-top: 10%;
-    line-height: 50px;
+#user_experience {
+    padding-top: 2%;
+    line-height: 30px;
     /* need to adjust the imbalance of spacing between the three lines */
 }
 
 #query_suggestions {
+    color: black;
+}
+
+#suggestion_content {
+    /* kind of padding */
+}
+
+#suggestion_list {
     color: black;
 }
