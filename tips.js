@@ -12,6 +12,7 @@ let theThirdTip = document.getElementById("tip_three");
 let theFourthTip = document.getElementById("tip_four");
 document.write(theThirdTip);
 document.write(theFourthTip);
+// try document.querySelector("...")
 // let listing = document.getElementById("course_listing");
 // let directory = document.getElementById("directory");
 document.getElementById("tip_four").innerHTML = "";
