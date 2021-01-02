@@ -1,3 +1,38 @@
+// convenient learning pathway:
+// Chapter 1-6, focusing on 2(HTML), 4(CSS), and 6(JS); if interested, Chapter 7-8(JS) when done with 1-6
+
+// intended learning pathway:
+// Chapter 1, 2-3(HTML), 4-5(CSS), 6-8(JS), 14(SQL), 12-13(PHP), 10(Mobile Web Dev), 9(jQuery), 11(Node.js)
+// inquire any chapter when have foundation questions, and stackoverflow always help
+// handle vocabulary input, mapping to prefix
+
+// Chapter 6:
+// 6.7: need Object data structure? (Actually have been using it all the time)
+// 6.8: use template literal? (relating PHP?)
+// 6.9: consider add Date object: record each suggest request and pass to the db
+// 6.10: machine learning math: pi, e, log(x), ln(x), etc., especially Math.random() for sampling
+// 6.11: add/replace on some functions of form validation, if necessary; compare CSS modification and Exception handling
+
+// Chapter 7:
+// 7.1: document (DOM), window (.open(), .location, .navigator), console; *async and *defer; handle third-party JS libraries
+// 7.2: DOM structure, document (.documentElement, .childNodes, .prevSibling, .nextSibling, .parentNode,
+//      .removeAttribute(), .nodeValue, .appendChild(), .insertBefore(), .removeChild(), .createElement(),
+//      .createTextNode(), .cloneNode())
+// *consider add machine learning when core features are done: CS229
+
+// Chapter 8:
+// 8.2/8.3: consider OOP: class Course
+
+// Google Form: surveying on suggestions
+// Excel: store and process course suggestions (pre-database)
+// JavaScript: all underlying logic on web pages with format
+// PHP: client - server - database communication
+// MySQL: query to course feedback/suggestion database and return; put the scraped prerequisites to relational DBs
+// web scraping: (periodically) obtain prerequisites of courses
+
+// consider deletion if necessary
+// shift to muse.union.edu around 1/4/21
+
 const CONSTANTS = {
     prefixCollection: ["AAH", "ACC", "ADA", "AFR", "AMS", "AIS", "AMU", "ANT", "ARB", "AST", "ATH", "AVA", "BCH",
         "BIO", "BME", "CHM", "CHN", "MLT", "CLS", "CSC", "ECE", "ECO", "EGL", "ENS", "ESC", "FLM", "FPR", "FRN", "GEO",
