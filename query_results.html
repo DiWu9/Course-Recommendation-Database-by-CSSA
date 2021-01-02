@@ -12,18 +12,43 @@
     <div id="query_results">
         <p id="query_course">The course that you are querying about is: <span class="undone">______</span><br></p>
         <p id="query_professor">The professor of the course is: <span class="undone">______</span><br></p>
-        <p id="query_suggestions">The suggestions are below:<br><br><br><br><br><br><br><br>
-            (A List of Suggestions)</p>
-        <!-- fix query_suggestions after learning PHP and MySQL -->
+        <p id="query_suggestions">
+            <!-- fix query_suggestions after learning PHP and MySQL -->
+            <div id="suggestion_introduction">The suggestions are below:</div>
+            <div id="suggestion_content">
+                <br>
+                <span>Course Index (Prefix+Number)</span>&nbsp;
+                <span>Course Difficulty</span>&nbsp;
+                <span>Professor Rate</span>&nbsp;
+                <span class="to_modify">Recommendation</span>&nbsp; <!-- need redesign? -->
+                <span class="to_modify">WAC</span>&nbsp; <!-- could consider integrating with scraping course information -->
+                <span>Written By</span>&nbsp;
+                <span>Suggestion</span>
+            </div>
+            <p id="suggestion_list">(A List of Suggestions)</p>
+            <!-- modify .css -->
     </div>
-    <div id="comments">
-        <label for="comments_input">Comments</label><br>
-        <textarea name="comments" id="comments_input"></textarea><br>
-        <button id="comments_submit_button" type="submit" value="Submit">Submit</button>
+    <iframe id="embedded_video" width="280" height="157" src="https://www.youtube.com/embed/Bsaq9burMdQ"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    <div id="user_experience">
+        <div id="usefulness">
+            <p id="useful_or_not">Do you think the suggestions are useful?</p>
+            <button id="useful" type="submit" value="Useful">Yes</button>&nbsp;
+            <button id="okay" type="submit" value="Okay">Decent</button>&nbsp;
+            <button id="not_useful" type="submit" value="Not Useful">No</button><br>
+        </div>
+        <div id="comments">
+            <label for="comments_input">Comments</label><br>
+            <textarea name="comments" id="comments_input"></textarea><br>
+            <button id="comments_submit_button" type="submit" value="Submit">Submit</button>
+        </div>
         <!-- add onclick="validateComments()" -->
         <!-- add onclick(?)="showSubmitted()" -->
+        <!-- add 'do you find the suggestions to be useful' -->
     </div>
-    <p id="warning">* The blackened ones are undone yet</p>
+    <p class="undone">* The black ones are undone yet</p>
+    <p class="to_modify">* The blue ones may need to modify</p>
     <!-- Handle invalid query based on valid input -->
     <!-- <h3>I am sorry but the *value* that you inquire does not exist.</h3> -->
 </body>
