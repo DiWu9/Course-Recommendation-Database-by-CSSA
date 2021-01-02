@@ -17,12 +17,14 @@ https://www.w3.org/Style/Examples/007/units.en.html
 https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html
 https://www.w3schools.com/html/html_forms.asp
 https://www.w3schools.com/html/html_classes.asp
+https://www.w3schools.com/html/html_youtube.asp
 https://www.w3schools.com/html/html_elements.asp
 https://www.w3schools.com/html/html_formatting.asp
 https://www.w3schools.com/tags/tag_p.asp
 https://www.w3schools.com/tags/tag_i.asp
 https://www.w3schools.com/tags/tag_hr.asp
 https://www.w3schools.com/tags/tag_form.asp
+https://www.w3schools.com/tags/tag_iframe.asp
 https://www.w3schools.com/tags/tag_button.asp
 https://www.w3schools.com/tags/tag_select.asp
 https://www.w3schools.com/tags/tag_textarea.asp
@@ -94,6 +96,7 @@ https://www.javascripttutorial.net/javascript-dom/javascript-onload/
 https://www.tutorialspoint.com/How-and-why-to-avoid-global-variables-in-JavaScript
 https://www.webnots.com/basics-of-a-static-website/
 https://www.geeksforgeeks.org/python-dictionary-update-method/
+https://www.geeksforgeeks.org/html-iframe-frameborder-attribute/
 https://www.geeksforgeeks.org/difference-between-innertext-and-innerhtml/
 https://www.vultr.com/docs/how-to-access-your-vultr-vps
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd197515(v=ws.10)?redirectedfrom=MSDN
@@ -119,6 +122,7 @@ https://stackoverflow.com/questions/3641581/link-rel-script-usage
 https://stackoverflow.com/questions/18392584/remove-spacing-between-p
 https://stackoverflow.com/questions/1066453/mysql-group-by-and-order-by
 https://stackoverflow.com/questions/16124032/js-strings-vs-concat-method
+https://stackoverflow.com/questions/18474834/add-spacing-between-two-spans
 https://stackoverflow.com/questions/36667200/mailto-form-action-alternative
 https://stackoverflow.com/questions/114543/how-to-horizontally-center-a-div
 https://stackoverflow.com/questions/4980525/css-center-display-inline-block
@@ -136,6 +140,7 @@ https://stackoverflow.com/questions/17929356/html-datalist-values-from-array-in-
 https://stackoverflow.com/questions/18470682/html-form-make-inputs-appear-on-the-same-line
 https://stackoverflow.com/questions/13739568/how-do-i-link-a-javascript-file-to-a-html-file
 https://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
+https://stackoverflow.com/questions/2511048/how-do-you-refer-to-more-than-one-css-file-in-html
 https://stackoverflow.com/questions/47054766/how-do-i-align-button-to-the-middle-of-the-screen
 https://stackoverflow.com/questions/28215896/intercepting-innerhtml-and-execution-other-command
 https://stackoverflow.com/questions/3587897/best-way-to-change-font-colour-halfway-through-paragraph
